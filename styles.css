@@ -2,10 +2,15 @@ article {
     font-size: 15px;
 }
 
+.cardwrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
 .card {
     border: 2px solid black ;
     width: 25%;
-    display: inline-table;
     padding: 1em;
     margin: 0.5em;
 }
