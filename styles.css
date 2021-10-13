@@ -1,0 +1,22 @@
+article {
+    font-size: 15px;
+}
+
+.card {
+    border: 2px solid black ;
+    width: 25%;
+    display: inline-table;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: #545454;
+    padding: 1em;
+    text-align: left;
+    color: white;
+}
