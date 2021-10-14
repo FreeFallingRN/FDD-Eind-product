@@ -5,17 +5,25 @@
     <meta name="author" content="Ben Vos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/266b9a8abe.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Interaction design | Ben Vos</title>
+    <title>Interaction Design | Ben Vos</title>
   </head>
   <body>
     <!-- Header -->
     <header onclick="index.html">
-      <h1>Website naam</h1>
+      <h1>Ben's Backpack</h1>
       <hr/>
-      <i class="fas fa-bars" id="burgermenu"></i>
+      <i class="fas fa-bars" id="burgermenu" onclick="openNav()"></i>
     </header>
-    <main>
+    <!-- Navigation Sidebalk-->
+      <nav id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </nav>
       <!-- Artikel -->
       <section>
         <h2>Interaction Design</h2>

@@ -1,7 +1,3 @@
-article {
-    font-size: 15px;
-}
-
 .cardwrapper {
     display: flex;
     justify-content: center;
@@ -10,26 +6,70 @@ article {
 
 .card {
     background-color: #d1cbc8;
-    max-width: 25%;
-    height: 200px;
-    padding: 1em;
+    width: 25%;
+    height: 10%;
+    padding: 2em;
     margin: 0.5em;
     clip-path: polygon(0% 0%, 0% 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0%);
-    overflow: hidden;
+    object-fit: contain;
 }
 
+
 img {
-    width: 100%;
+    width: 50%;
+
 }
 
 header {
+    position: relative;
     background-color: #323c68;
     padding: 1em;
     text-align: left;
     color: white;
 }
 
- #burgermenu {
+img {
+    object-fit: contain;
+    float: right;
+  }
+
+.sidenav {
+    height: 100%;
+    width: 0;
     position: fixed;
-    right: 1em;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #455c64;
+    overflow-x: hidden;
+    /* Change if needed */
+    padding-top: 50px; 
+    transition: 0.5s;
 }
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+.sidenav .closebtn, #burgermenu {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
