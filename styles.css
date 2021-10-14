@@ -9,10 +9,13 @@ article {
 }
 
 .card {
-    border: 2px solid black ;
-    width: 25%;
+    background-color: #d1cbc8;
+    max-width: 25%;
+    height: 200px;
     padding: 1em;
     margin: 0.5em;
+    clip-path: polygon(0% 0%, 0% 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0%);
+    overflow: hidden;
 }
 
 img {
@@ -20,7 +23,7 @@ img {
 }
 
 header {
-    background-color: #545454;
+    background-color: #323c68;
     padding: 1em;
     text-align: left;
     color: white;
