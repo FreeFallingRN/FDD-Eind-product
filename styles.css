@@ -46,14 +46,18 @@ img {
     transition: 0.5s;
 }
 
-#mySidenav a {
+#mySidenav a, #mySidenav button {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: black;
     display: block;
     transition: 0.3s;
+    background-color: transparent;
+    outline: none;
+    border: none;
   }
+
 
 #mySidenav .sublink {
   color: grey;
