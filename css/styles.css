@@ -2,27 +2,6 @@
     font-family: Georgia,Times,Times New Roman,serif; 
 }
 
-.cardwrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-}
-
-.card {
-    background-color: #d1cbc8;
-    width: 25%;
-    height: 10%;
-    padding: 2em;
-    margin: 0.5em;
-    clip-path: polygon(0% 0%, 0% 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0%);
-    object-fit: contain;
-}
-
-.card a {
-    text-decoration: none;
-    color: black;
-}
-
 header {
     position: relative;
     background-color: #323c68;
@@ -34,7 +13,28 @@ header {
 #pageTitle {
     text-decoration: none;
     color: white;
-}    
+}  
+
+.cardwrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.card {
+    background-color: #d1cbc8;
+    max-width: 25%;
+    height: 10%;
+    padding: 2em;
+    margin: 0.5em;
+    clip-path: polygon(0% 0%, 0% 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0%);
+    object-fit: contain;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}  
 
 #mySidenav {
     height: 100%;
