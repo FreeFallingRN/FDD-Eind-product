@@ -1,3 +1,7 @@
+* {
+    font-family: Georgia,Times,Times New Roman,serif; 
+}
+
 .cardwrapper {
     display: flex;
     justify-content: center;
@@ -26,6 +30,11 @@ header {
     text-align: left;
     color: white;
 }
+
+#pageTitle {
+    text-decoration: none;
+    color: white;
+}    
 
 img {
     object-fit: contain;
@@ -80,5 +89,6 @@ img {
   @media screen and (max-height: 450px) {
     #mySidenav {padding-top: 15px;}
     #mySidenav a {font-size: 18px;}
+    #mySidenav .sublink {font-size: 15px;}
   }
 
