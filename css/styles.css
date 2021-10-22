@@ -18,9 +18,9 @@
     object-fit: contain;
 }
 
-
-img {
-    width: 50%;
+.card a {
+    text-decoration: none;
+    color: black;
 }
 
 header {
@@ -36,11 +36,6 @@ header {
     color: white;
 }    
 
-img {
-    object-fit: contain;
-    float: right;
-  }
-
 #mySidenav {
     height: 100%;
     width: 0;
@@ -51,7 +46,6 @@ img {
     background-color: #455c64;
     opacity: 0%;
     overflow-x: hidden;
-    /* Change if needed */
     padding-top: 50px; 
     transition: 0.3s;
 }
