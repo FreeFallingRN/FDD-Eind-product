@@ -2,6 +2,15 @@
     font-family: Georgia,Times,Times New Roman,serif; 
 }
 
+body {
+    display:flex;
+    flex-direction:column;
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
 header {
     position: relative;
     background-color: #323c68;
@@ -120,6 +129,22 @@ header {
 
 #burgermenu {
     margin-top: 50px;
+}
+
+footer {
+    background-color:black;
+    color:lightgray;
+    width:100%;
+    position:absolute;
+    bottom:0;
+}
+
+footer .footerContent {
+    padding:1em;
+}
+
+#creationData {
+    text-align:center;
 }
 
 @media screen and (max-height: 450px) {
