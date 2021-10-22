@@ -22,24 +22,36 @@ header {
 
 .cardwrapper {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 .card {
     background-color: #d1cbc8;
-    width: 20%;
-    height: 10%;
-    padding: 2em;
-    margin: 0.5em;
-    clip-path: polygon(0% 0%, 0% 85%, 15% 100%, 100% 100%, 100% 15%, 85% 0%);
-    object-fit: contain;
+    width: 350px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 2em;
+    flex-shrink: 0;
 }
 
-.card a {
+.cardContent p {
+    padding: 0.6em;
+}
+
+.cardHeader {
+    background-color: #455c64;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cardHeader a {
     text-decoration: none;
     color: black;
+    opacity: 100%;
+    padding: 0.6em;
 }  
 
 #mySidenav {
@@ -84,11 +96,19 @@ header {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+}
 
-  @media screen and (max-height: 450px) {
+#burgermenu {
+    margin-top: 50px;
+}
+
+@media screen and (max-height: 450px) {
     #mySidenav {padding-top: 15px;}
     #mySidenav a {font-size: 18px;}
     #mySidenav .sublink {font-size: 15px;}
-  }
+}
 
+  @media screen and (max-width: 1100px) {
+      .cardwrapper {flex-direction:column;}
+      .card {margin:2em auto;}
+  }
