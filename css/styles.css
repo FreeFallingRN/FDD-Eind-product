@@ -15,15 +15,21 @@ header {
     color: white;
 }  
 
+#intro {
+    text-align: center;
+    padding: 2em;
+}
+
 .cardwrapper {
     display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
     background-color: #d1cbc8;
-    max-width: 25%;
+    width: 20%;
     height: 10%;
     padding: 2em;
     margin: 0.5em;
