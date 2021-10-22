@@ -1,8 +1,8 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    Object.assign(mySidenav.style,{width:"250px", opacity:"100%"});
   }
   
 
   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    Object.assign(mySidenav.style,{width:"0px", opacity:"0%"});
   }
