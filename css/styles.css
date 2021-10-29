@@ -51,7 +51,7 @@ header {
 }
 
 .cardHeader {
-    background-color: #455c64;
+    background-color: #595f61;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -60,7 +60,7 @@ header {
 }
 
 .card:hover > .cardHeader {
-    height: 100px;
+    height: 120px;
 }
 
 .card:hover > .cardHeader span{
@@ -70,12 +70,13 @@ header {
 .cardHeader a {
     text-decoration: none;
     color: black;
-    padding: 0.6em;
+    padding-left: 0.5em;
+    display: block;
 }  
 
 .cardHeader span {
     display: none;
-    padding: 1em;
+    padding-left: 1em;
     transition: display 0.2s;
 }
 
