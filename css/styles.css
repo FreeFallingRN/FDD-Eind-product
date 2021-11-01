@@ -9,7 +9,7 @@ body {
     width: 100%;
     padding:0;
     margin:0;
-    position: relative;
+
 }
 
 img {
@@ -50,6 +50,7 @@ main {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    position:relative;
 }
 
 .card {
@@ -174,7 +175,7 @@ footer {
     background-color:black;
     color:lightgray;
     width:100%;
-    position:absolute;
+    position:sticky;
     bottom:0;
 }
 
