@@ -98,6 +98,10 @@ main {
     transition: display 0.2s;
 }
 
+.cardHeader a:hover {
+    color:white;
+}
+
 .cardContent p {
     padding: 0.6em;
 }
