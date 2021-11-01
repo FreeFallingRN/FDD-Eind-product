@@ -167,22 +167,6 @@ section.week_1 p {
     text-indent: 1.5em;
 }
 
-div.footerSpace {
-    height:88px;
-}
-
-footer {
-    background-color:black;
-    color:lightgray;
-    width:100%;
-    position:sticky;
-    bottom:0;
-}
-
-footer .footerContent {
-    padding:1em;
-}
-
 #creationData {
     text-align:center;
 }
