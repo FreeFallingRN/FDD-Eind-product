@@ -184,10 +184,15 @@ main {
     flex-direction:row;
     justify-content:space-between;
     font-size:25px;
+    padding:0 1em;
 }
 
 #myTopNav a {
     text-decoration:none;
+}
+
+#mainSeperator {
+    width:calc(100% - 2em);
 }
 
 section.week_1 h3 {
@@ -207,8 +212,41 @@ section.week_1 p {
     text-indent: 1.5em;
 }
 
-#creationData {
-    text-align:center;
+form {
+    width: 500px;
+    background-color: #e3e3e3;
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 0px gray;
+    margin: auto;
+}
+
+form > input, form > textarea {
+    border-radius: 4px;
+    border: solid 2px #0072BB;
+    padding: .5em;
+    margin: 1em;
+}
+
+form > * {
+    display: block;
+    width: calc(100% - 3em - 4px);
+}
+
+form > input#submit {
+    background-color: #0072BB;
+    color: white;
+    width: 100px;
+    margin: auto;
+}
+
+form > input#submit:hover {
+    box-shadow: 0px 0px 5px 0px #0072BB;
+    cursor: pointer;
+}
+
+input.touched:invalid, textarea.touched:invalid {
+    border-color: red;
 }
 
 @media screen and (max-height: 450px) {
