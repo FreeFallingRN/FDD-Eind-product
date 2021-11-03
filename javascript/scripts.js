@@ -28,4 +28,3 @@ $(document).ready(function (e) {
         e.target.classList.add('touched');
     });
 });
-

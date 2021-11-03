@@ -235,6 +235,11 @@ section.week_1 p {
     text-indent: 1.5em;
 }
 
+embed {
+    width:50%;
+    height:600px;
+}
+
 .contactPage {
     text-align:center;
 }
