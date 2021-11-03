@@ -79,7 +79,8 @@ footer > .links {
 }
 
 div.footerSpace {
-    height:calc(1em +var(--footerHeight));
+    --spaceNeeded : calc(1em + var(--footerHeight));
+    height:var(--spaceNeeded)
 }
 
 #intro {
@@ -201,7 +202,11 @@ a.cardHeader {
 }
 
 #burgermenu {
-    margin-top: 50px;
+    margin-top:14px;
+}
+
+span#burgermenu {
+    font-size:30px;
 }
 
 .topNav {
