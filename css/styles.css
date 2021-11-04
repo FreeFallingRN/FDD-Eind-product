@@ -364,6 +364,12 @@ figure.lighthouseReport {
     margin: 2em auto;
 }
 
+/* Uploaden */
+
+ol > img {
+    margin-bottom:1em;
+}
+
 /* Scale */
 
 @media screen and (max-height: 450px) {
