@@ -6,128 +6,146 @@
 -->
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Grafisch Design rekening houdend met Accesibility">
-    <meta name="author" content="Ben Vos">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/266b9a8abe.js" crossorigin="anonymous"></script>
-    <script src="../javascript/scripts.js"></script>
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Grafisch Design | Ben Vos</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <h1><a id="pageTitle" href="../index.html">Ben's Backpack</a></h1>
-      <hr>
-      <span id="burgermenu" onclick="openNav()">Menu <i class="fas fa-bars" aria-hidden="true"></i></span>
-    </header>
-    <!-- Navigation Sidebalk-->
-    <nav id="mySidenav">
-      <button class="closebtn" onclick="closeNav()">×</button>
-      <a href="../over_mij.html">Over mij</a>
-      <a href="../over_mij/introductie.html" class="sublink">Introductie</a>
-      <a href="../over_mij/skills.html" class="sublink">Skills</a>
-      <a href="../over_mij.html" class="sublink">Zie meer →</a>
-      <a href="../schoolopdracht.html">Deze website</a>
-      <a href="week_1.html" class="sublink">Interaction Design</a>
-      <a href="proces.html" class="sublink">Ontwerpproces</a>
-      <a href="../schoolopdracht.html" class="sublink">Zie meer →</a>
-      <a href="../projecten.html">Projecten</a>
-      <a href="../404.html" class="sublink">W.I.P.</a>
-      <a href="../404.html" class="sublink">W.I.P.</a>
-      <a href="../projecten.html" class="sublink">Zie meer →</a>
-    </nav>
-    <!-- Navigation topbalk -->
-    <nav class="topNav">
-      <a href="proces.html"><i class="fas fa-chevron-left"></i> Ontwerpproces</a>
-      <span>Grafisch Design</span>
-      <a href="front_end.html">Front-end <i class="fas fa-chevron-right"></i></a>
-    </nav>
-    <hr class="mainSeperator"/>
-    <!-- Inhound -->
-    <div class="mainWrapper">
-      <main id=widthLimit>
-        <p>Ik heb Lighthouse gebruikt om de best practices en accessibility van mijn website te testen.
-           Ik heb 4 pagina’s getest: homepagina, interaction design, ontwerpproces en contact. 
-           Zoals te zien is in de onderstaande afbeeldingen scoren alle 4 de pagina’s 100% Accessibility en tussen de 93% en 87% op Best Practices.</p>
-        <!-- Accessibility -->
-        <h2>Accessibility</h2>
-        <p>Ik zal een paar dingen opnoemen die zijn getest, goedgekeurd en waarom dit de website beter toegankelijk maakt.
-          <ul>
-            <li>Elke pagina heeft een title element, dit helpt zoekmachines en gebruikers om de juiste pagina te vinden. Verder kan een goede title direct worden opgeslagen als bladwijzer.</li>
-            <li>Knoppen hebben een toegankelijke naam, dit helpt screenreader en zo ook mensen die screenreaders gebruiken om te weten wat elke knop doet</li>
-            <li>Links hebben een duidelijke naam, ook dit is vooral van belang voor screenreaders.</li>
-            <li>Achtergrond en voorgrond hebben voldoende contrast, dit is belangrijk om de website leesbaar te houden voor kleurenblinden en slechtzienden.</li>
-            <li>Headings verschijnen in de juiste volgorde, dit verbeterd de structuur van de pagina en maakt het navigeren over de pagina makkelijker met hulpmiddelen.</li>
-            <li>Er is een lang attribuut toegevoegd aan de html tag, dit helpt screenreader om de tekst op de pagina juist uit te spreken met het voorlezen.</li>
-          </ul>
-          <p>100% Accessibility op al mijn pagina’s, dus ik weet niet wat ik zou moeten doen om dit te verbeteren.</p>
-        <hr/>
-        <!-- Best Practices -->
-        <h2>Best Practices</h2>
-        <p>Mijn best practices scoren iets lager dan het vorige deel en ik zal hier verklaren waarom dit is en waarom ik dit niet heb opgelost. Nu heeft elke pagina een score van 93% of lager, 
-          de 7% die mist is bij alle 4 afwezig. In de eerste 2 afbeelding onderaan heb ik de foutmelding uitgeklapt en kan je lezen dat de fout in regel 11 van mijn javascript zit. 
-          Op deze regel begint het script voor mijn formulier dat ik heb overgenomen uit de boilerplate, dit script wordt niet gebruikt op alle pagina’s met uitzondering van de contactpagina 
-          en dit zorgt voor een foutmelding. Op de contactpagina gaat dezelfde score hier vanaf omdat wordt aangegeven dat JQuery bekent is als een niet veilige bibliotheek. Ik doe niets aan 
-          deze meldingen omdat de docenten dit zelf hebben aangeleverd en er waarschijnlijk geen problemen mee vinden.</p>
-        <p>Het andere punt van de 7 procent die mist is dat er geen beveilig word gedetecteerd tegen XSS (cross-site scripting) aanvallen. 
-          Mijn website bevindt zich binnen het domein van school, dus ik kan hier geen beveiliging aan toevoegen.</p>
-        <p>De reden voor een 87% op de pagina ontwerpproces komt door het Figma iframe dat ik hier heb toegevoegd. Ik vind het iframe een goede toevoeging aan mijn website en snap niet waar 
-          de foutmelding vandaan komt. De source komt direct van Figma en de foutmelding snap ik niet, al met al externe code waar ik zelf weinig verstand van heb en dat ik toch liever het 
-          iframe heb dan een iets hogere score in best practices.</p>
-        <p>Dit waren de dingen waar punten voor werden afgetrokken, uiteraard zijn er ook dingen die goed zijn.</p>
-          <ul>
-            <li>Ik heb mijn kaarten omsloten door hier een lijn omheen te zetten, Gestalt: sluiting.</li>
-            <li>Ik heb in mijn menu onderscheid gemaakt tussen pagina’s en groep namen in kleur en grootte, Gestalt: gelijkenis.</li>
-            <li>Ik heb de kaarten op de homepagina op meerde pagina’s gebruikt met dezelfde functie, Gestalt: gelijkenis.</li>
-            <li>Ik heb de charset gedefinieerd.</li>
-            <li>Input mag in een veld worden geplakt.</li>
-            <li>Bovenaan het document staat !DOCTYPE html</li>
-            <li>Links naar sites buiten het domein zijn veilig door rel=”noopener”</li>
-          </ul>
-        <p>Hieronder volgen screenshots van het Lighthouse rapport.</p>
-        <!-- Afbeeldingen -->
-        <figure class="lighthouseReport">
-          <img src="../images/accessibilityHome.jpg" alt="Screenshot van Lighthouse rapport op index.html"/>
-          <figcaption>Lighthouse rapport op <a href="../index.html">Home</a>.</figcaption>
-        </figure>
-        <figure class="lighthouseReport">
-          <img src="../images/accessibilityDetail1.jpg" alt="Screenshot van Lighthouser rapport op week_1.html"/>
-          <figcaption>Lighthouse rapport op <a href="week_1.html">Interaction Design</a></figcaption>
-        </figure>
-        <figure class="lighthouseReport">
-          <img src="../images/accessibilityDetail2.jpg" alt="Screenshot van Lighthouser rapport op proces.html"/>
-          <figcaption>Lighthouse rapport op <a href="proces.html">Ontwerpproces</a></figcaption>
-        </figure>
-        <figure class="lighthouseReport">
-          <img src="../images/accessibilityContact.jpg" alt="Screenshot van Lighthouser rapport op contact.html"/>
-          <figcaption>Lighthouse rapport op <a href="../over_mij/contact.html">Contact</a></figcaption>
-        </figure>
-      </main>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Grafisch Design rekening houdend met Accesibility">
+  <meta name="author" content="Ben Vos">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/266b9a8abe.js" crossorigin="anonymous"></script>
+  <script src="../javascript/scripts.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Grafisch Design | Ben Vos</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1><a id="pageTitle" href="../index.html">Ben's Backpack</a></h1>
+    <hr>
+    <span id="burgermenu" onclick="openNav()">Menu <i class="fas fa-bars" aria-hidden="true"></i></span>
+  </header>
+  <!-- Navigation Sidebalk-->
+  <nav id="mySidenav">
+    <button class="closebtn" onclick="closeNav()">×</button>
+    <a href="../over_mij.html">Over mij</a>
+    <a href="../over_mij/introductie.html" class="sublink">Introductie</a>
+    <a href="../over_mij/skills.html" class="sublink">Skills</a>
+    <a href="../over_mij.html" class="sublink">Zie meer →</a>
+    <a href="../schoolopdracht.html">Deze website</a>
+    <a href="week_1.html" class="sublink">Interaction Design</a>
+    <a href="proces.html" class="sublink">Ontwerpproces</a>
+    <a href="../schoolopdracht.html" class="sublink">Zie meer →</a>
+    <a href="../projecten.html">Projecten</a>
+    <a href="../404.html" class="sublink">W.I.P.</a>
+    <a href="../404.html" class="sublink">W.I.P.</a>
+    <a href="../projecten.html" class="sublink">Zie meer →</a>
+  </nav>
+  <!-- Navigation topbalk -->
+  <nav class="topNav">
+    <a href="proces.html"><i class="fas fa-chevron-left"></i> Ontwerpproces</a>
+    <span>Grafisch Design</span>
+    <a href="front_end.html">Front-end <i class="fas fa-chevron-right"></i></a>
+  </nav>
+  <hr class="mainSeperator" />
+  <!-- Inhound -->
+  <div class="mainWrapper">
+    <main id=widthLimit>
+      <p>Ik heb Lighthouse gebruikt om de best practices en accessibility van mijn website te testen.
+        Ik heb 4 pagina’s getest: homepagina, interaction design, ontwerpproces en contact.
+        Zoals te zien is in de onderstaande afbeeldingen scoren alle 4 de pagina’s 100% Accessibility en tussen de 93%
+        en 87% op Best Practices.</p>
+      <!-- Accessibility -->
+      <h2>Accessibility</h2>
+      <p>Ik zal een paar dingen opnoemen die zijn getest, goedgekeurd en waarom dit de website beter toegankelijk maakt.
+      <ul>
+        <li>Elke pagina heeft een title element, dit helpt zoekmachines en gebruikers om de juiste pagina te vinden.
+          Verder kan een goede title direct worden opgeslagen als bladwijzer.</li>
+        <li>Knoppen hebben een toegankelijke naam, dit helpt screenreader en zo ook mensen die screenreaders gebruiken
+          om te weten wat elke knop doet</li>
+        <li>Links hebben een duidelijke naam, ook dit is vooral van belang voor screenreaders.</li>
+        <li>Achtergrond en voorgrond hebben voldoende contrast, dit is belangrijk om de website leesbaar te houden voor
+          kleurenblinden en slechtzienden.</li>
+        <li>Headings verschijnen in de juiste volgorde, dit verbeterd de structuur van de pagina en maakt het navigeren
+          over de pagina makkelijker met hulpmiddelen.</li>
+        <li>Er is een lang attribuut toegevoegd aan de html tag, dit helpt screenreader om de tekst op de pagina juist
+          uit te spreken met het voorlezen.</li>
+      </ul>
+      <p>100% Accessibility op al mijn pagina’s, dus ik weet niet wat ik zou moeten doen om dit te verbeteren.</p>
+      <hr />
+      <!-- Best Practices -->
+      <h2>Best Practices</h2>
+      <p>Mijn best practices scoren iets lager dan het vorige deel en ik zal hier verklaren waarom dit is en waarom ik
+        dit niet heb opgelost. Nu heeft elke pagina een score van 93% of lager,
+        de 7% die mist is bij alle 4 afwezig. In de eerste 2 afbeelding onderaan heb ik de foutmelding uitgeklapt en kan
+        je lezen dat de fout in regel 11 van mijn javascript zit.
+        Op deze regel begint het script voor mijn formulier dat ik heb overgenomen uit de boilerplate, dit script wordt
+        niet gebruikt op alle pagina’s met uitzondering van de contactpagina
+        en dit zorgt voor een foutmelding. Op de contactpagina gaat dezelfde score hier vanaf omdat wordt aangegeven dat
+        JQuery bekent is als een niet veilige bibliotheek. Ik doe niets aan
+        deze meldingen omdat de docenten dit zelf hebben aangeleverd en er waarschijnlijk geen problemen mee vinden.</p>
+      <p>Het andere punt van de 7 procent die mist is dat er geen beveilig word gedetecteerd tegen XSS (cross-site
+        scripting) aanvallen.
+        Mijn website bevindt zich binnen het domein van school, dus ik kan hier geen beveiliging aan toevoegen.</p>
+      <p>De reden voor een 87% op de pagina ontwerpproces komt door het Figma iframe dat ik hier heb toegevoegd. Ik vind
+        het iframe een goede toevoeging aan mijn website en snap niet waar
+        de foutmelding vandaan komt. De source komt direct van Figma en de foutmelding snap ik niet, al met al externe
+        code waar ik zelf weinig verstand van heb en dat ik toch liever het
+        iframe heb dan een iets hogere score in best practices.</p>
+      <p>Dit waren de dingen waar punten voor werden afgetrokken, uiteraard zijn er ook dingen die goed zijn.</p>
+      <ul>
+        <li>Ik heb mijn kaarten omsloten door hier een lijn omheen te zetten, Gestalt: sluiting.</li>
+        <li>Ik heb in mijn menu onderscheid gemaakt tussen pagina’s en groep namen in kleur en grootte, Gestalt:
+          gelijkenis.</li>
+        <li>Ik heb de kaarten op de homepagina op meerde pagina’s gebruikt met dezelfde functie, Gestalt: gelijkenis.
+        </li>
+        <li>Ik heb de charset gedefinieerd.</li>
+        <li>Input mag in een veld worden geplakt.</li>
+        <li>Bovenaan het document staat !DOCTYPE html</li>
+        <li>Links naar sites buiten het domein zijn veilig door rel=”noopener”</li>
+      </ul>
+      <p>Hieronder volgen screenshots van het Lighthouse rapport.</p>
+      <!-- Afbeeldingen -->
+      <figure class="lighthouseReport">
+        <img src="../images/accessibilityHome.jpg" alt="Screenshot van Lighthouse rapport op index.html" />
+        <figcaption>Lighthouse rapport op <a href="../index.html">Home</a>.</figcaption>
+      </figure>
+      <figure class="lighthouseReport">
+        <img src="../images/accessibilityDetail1.jpg" alt="Screenshot van Lighthouser rapport op week_1.html" />
+        <figcaption>Lighthouse rapport op <a href="week_1.html">Interaction Design</a></figcaption>
+      </figure>
+      <figure class="lighthouseReport">
+        <img src="../images/accessibilityDetail2.jpg" alt="Screenshot van Lighthouser rapport op proces.html" />
+        <figcaption>Lighthouse rapport op <a href="proces.html">Ontwerpproces</a></figcaption>
+      </figure>
+      <figure class="lighthouseReport">
+        <img src="../images/accessibilityContact.jpg" alt="Screenshot van Lighthouser rapport op contact.html" />
+        <figcaption>Lighthouse rapport op <a href="../over_mij/contact.html">Contact</a></figcaption>
+      </figure>
+    </main>
+  </div>
+  <!-- Navigation Bottombar -->
+  <hr class="mainSeperator" />
+  <nav class="topNav">
+    <a href="proces.html"><i class="fas fa-chevron-left"></i> Ontwerpproces</a>
+    <a href="front_end.html">Front-end <i class="fas fa-chevron-right"></i></a>
+  </nav>
+  <!-- Footer -->
+  <div class="footerSpace"></div>
+  <footer>
+    <span>Ben Vos 2021</span>
+    <hr />
+    <div class="links">
+      <a href="../over_mij/contact.html">Contact</a>
+      <i class="fas fa-circle"></i>
+      <a href="../pdf/Sitemap.pdf" download>Sitemap</a>
+      <i class="fas fa-circle"></i>
+      <a href="https://www.linkedin.com/in/ben-v-4663a3205/" target="_blank" rel="noopener">LinkedIn</a>
+      <i class="fas fa-circle"></i>
+      <a href="https://github.com/FreeFallingRN" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <!-- Navigation Bottombar -->
-    <hr class="mainSeperator"/>
-    <nav class="topNav">
-      <a href="proces.html"><i class="fas fa-chevron-left"></i> Ontwerpproces</a>
-      <a href="front_end.html">Front-end <i class="fas fa-chevron-right"></i></a>
-    </nav>
-    <!-- Footer -->
-    <div class="footerSpace"></div>
-    <footer>
-      <span>Ben Vos 2021</span>
-      <hr/>
-      <div class="links">
-        <a href="../over_mij/contact.html">Contact</a>
-        <i class="fas fa-circle"></i>
-        <a href="../pdf/Sitemap.pdf" download>Sitemap</a>
-        <i class="fas fa-circle"></i>
-        <a href="https://www.linkedin.com/in/ben-v-4663a3205/" target="_blank" rel="noopener">LinkedIn</a>
-        <i class="fas fa-circle"></i>
-        <a href="https://github.com/FreeFallingRN" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>

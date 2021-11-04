@@ -4,28 +4,29 @@
     Description
         Het css document voor het project Eind Product
 */
+
 :root {
     --footerHeight: 120px;
 }
 
 * {
-    font-family: Georgia,Times,Times New Roman,serif; 
+    font-family: Georgia, Times, Times New Roman, serif;
 }
 
 html, body {
-    min-height:100vh;
+    min-height: 100vh;
 }
 
 body {
-    display:flex;
-    flex-direction:column;
-    height:100%;
-    width:100%;
-    padding:0;
-    margin:0;
-    position:relative;
-    background:#9eb4b948;
-    font-size:18px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background: #9eb4b948;
+    font-size: 18px;
 }
 
 img {
@@ -37,10 +38,11 @@ img {
 }
 
 blockquote {
-    font-style:italic;
+    font-style: italic;
 }
 
 /* Header */
+
 header {
     position: relative;
     background-color: #10375d;
@@ -52,51 +54,54 @@ header {
 #pageTitle {
     text-decoration: none;
     color: white;
-}  
+}
 
 /* Footer */
+
 footer {
     padding: 1em 1em 0;
-    position:absolute;
-    bottom:0;
-    background-color:#05647a;
+    position: absolute;
+    bottom: 0;
+    background-color: #05647a;
     width: calc(100% - 2em);
-    height:var(--footerHeight);
+    height: var(--footerHeight);
 }
 
 footer {
-    color:white;
+    color: white;
 }
 
-footer  a{
-    color:white;
-    margin:0 1em;
+footer a {
+    color: white;
+    margin: 0 1em;
 }
 
-footer > .links {
-    text-align:center;
+footer>.links {
+    text-align: center;
 }
 
 div.footerSpace {
-    --spaceNeeded : calc(1em + var(--footerHeight));
-    height:var(--spaceNeeded)
+    --spaceNeeded: calc(1em + var(--footerHeight));
+    height: var(--spaceNeeded)
 }
 
 /* Layout */
+
 main {
     margin: 0 1em;
 }
 
 div.mainWrapper {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
 #widthLimit {
-    max-width:900px;
+    max-width: 900px;
 }
 
 /* Kaarten */
+
 .card {
     background-color: #75a7b36c;
     width: 350px;
@@ -109,7 +114,7 @@ div.mainWrapper {
 }
 
 .card:hover {
-    box-shadow: 0px 0px 14px 2px rgb(0, 0,0);
+    box-shadow: 0px 0px 14px 2px rgb(0, 0, 0);
 }
 
 .cardHeader {
@@ -121,15 +126,15 @@ div.mainWrapper {
     transition: height 0.3s;
 }
 
-.card:hover > .cardHeader {
+.card:hover>.cardHeader {
     height: 120px;
 }
 
-.card:hover > .cardHeader h2 {
-    color:white;
+.card:hover>.cardHeader h2 {
+    color: white;
 }
 
-.card:hover > .cardHeader span{
+.card:hover>.cardHeader span {
     display: inline;
 }
 
@@ -138,7 +143,7 @@ a.cardHeader {
     color: black;
     padding-left: 0.5em;
     display: block;
-}  
+}
 
 .cardHeader span {
     display: none;
@@ -154,19 +159,20 @@ fieldset.cardwrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    position:relative;
-    border-radius:0 40px;
-    border-width:5px;
-    margin:0em 2em 2em 2em;
+    position: relative;
+    border-radius: 0 40px;
+    border-width: 5px;
+    margin: 0em 2em 2em 2em;
 }
 
-fieldset.cardwrapper > legend {
-    margin-left:3em;
-    font-size:20px;
-    font-weight:bold;
+fieldset.cardwrapper>legend {
+    margin-left: 3em;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Zijnavigatie */
+
 #mySidenav {
     height: 100%;
     width: 0;
@@ -177,7 +183,7 @@ fieldset.cardwrapper > legend {
     background-color: #05647a;
     opacity: 0%;
     overflow-x: hidden;
-    padding-top: 50px; 
+    padding-top: 50px;
     transition: 0.3s;
 }
 
@@ -194,18 +200,18 @@ fieldset.cardwrapper > legend {
 }
 
 #mySidenav .sublink {
-  color: #e0e2d5;
-  font-size: 20px;
-  text-indent:1em;
+    color: #e0e2d5;
+    font-size: 20px;
+    text-indent: 1em;
 }
 
 #mySidenav a:hover {
     color: #f1f1f1;
-  }
+}
 
 #mySidenav .sublink:hover {
     color: black;
-} 
+}
 
 #mySidenav .closebtn, #burgermenu {
     position: absolute;
@@ -216,41 +222,44 @@ fieldset.cardwrapper > legend {
 }
 
 #burgermenu {
-    margin-top:14px;
+    margin-top: 14px;
 }
 
 span#burgermenu {
-    font-size:30px;
+    font-size: 30px;
 }
 
 /* Boven navigatie */
+
 .topNav {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    font-size:25px;
-    padding:0 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 0 1em;
 }
 
 .topNav a {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 /* Inhoud */
+
 #intro {
     text-align: center;
     padding: 2em;
 }
 
 .mainSeperator {
-    width:calc(100% - 2em);
+    width: calc(100% - 2em);
 }
 
 figcaption {
-    text-align:right;
+    text-align: right;
 }
 
 /* Interaction Design */
+
 .week_1 h3 {
     margin-bottom: 0;
 }
@@ -259,74 +268,76 @@ figcaption {
     margin-top: 0;
 }
 
-.week_1  img {
-    border:solid 2px #10375d;
+.week_1 img {
+    border: solid 2px #10375d;
 }
 
-.week_1 p {
+main#widthLimit p {
     text-indent: 1.5em;
 }
 
 /* Ontwerpproces */
+
 .prototype {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    width:900px;
-    height:500px; 
-    margin:auto 0;
+    width: 900px;
+    height: 500px;
+    margin: auto 0;
 }
 
 embed {
-    width:100%;
-    height:600px;
+    width: 100%;
+    height: 600px;
 }
 
 #uxTest2Fig {
-    float:right;
-    max-width:500px;
+    float: right;
+    max-width: 500px;
 }
 
 /* Contact */
+
 .contactPage {
-    text-align:center;
+    text-align: center;
 }
 
-.contactPage > p {
-    padding:0 2em;
+.contactPage>p {
+    padding: 0 2em;
 }
 
 form {
     width: 500px;
-    background-color:#c5c6c9;
+    background-color: #c5c6c9;
     padding: 1em;
     border-radius: 4px;
     box-shadow: 0px 0px 5px 0px gray;
     margin: 2em auto;
 }
 
-form > input, form > textarea {
+form>input, form>textarea {
     border-radius: 4px;
     border: solid 2px #10375d;
     padding: .5em;
     margin: 1em;
 }
 
-form > textarea {
-    height:100px;
+form>textarea {
+    height: 100px;
 }
 
-form > * {
+form>* {
     display: block;
     width: calc(100% - 3em - 4px);
 }
 
-form > input#submit {
+form>input#submit {
     background-color: #10375d;
     color: white;
     width: 100px;
     margin: auto;
 }
 
-form > input#submit:hover {
+form>input#submit:hover {
     box-shadow: 0px 0px 5px 0px #0072BB;
     cursor: pointer;
 }
@@ -336,33 +347,48 @@ input.touched:invalid, textarea.touched:invalid {
 }
 
 /* Schoolopdracht */
+
 #linkBox {
-    width:fit-content;
-    border:inset 2px grey;
-    padding:0 2em 0 0;
-    border-radius:30px;
-    background-color:#75a7b36c;
-    margin:auto;
+    width: fit-content;
+    border: inset 2px grey;
+    padding: 0 2em 0 0;
+    border-radius: 30px;
+    background-color: #75a7b36c;
+    margin: auto;
 }
 
 /* Grafisch design */
+
 figure.lighthouseReport {
-    width:80%;
-    margin:2em auto;
+    width: 80%;
+    margin: 2em auto;
 }
 
 /* Scale */
+
 @media screen and (max-height: 450px) {
-    #mySidenav {padding-top: 15px;}
-    #mySidenav a {font-size: 18px;}
-    #mySidenav .sublink {font-size: 15px;}
+    #mySidenav {
+        padding-top: 15px;
+    }
+    #mySidenav a {
+        font-size: 18px;
+    }
+    #mySidenav .sublink {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
-    .cardwrapper {flex-direction:column;}
-    .card {margin:2em auto;}
+    .cardwrapper {
+        flex-direction: column;
+    }
+    .card {
+        margin: 2em auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
-    figure.week_1 {max-width: 100%}
+    figure.week_1 {
+        max-width: 100%
+    }
 }

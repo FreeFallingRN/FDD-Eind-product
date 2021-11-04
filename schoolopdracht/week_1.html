@@ -6,145 +6,197 @@
 -->
 <!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Artikel over Interaction Design">
-    <meta name="author" content="Ben Vos">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/266b9a8abe.js" crossorigin="anonymous"></script>
-    <script src="../javascript/scripts.js"></script>
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Interaction Design | Ben Vos</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <h1><a id="pageTitle" href="../index.html">Ben's Backpack</a></h1>
-      <hr>
-      <span id="burgermenu" onclick="openNav()">Menu <i class="fas fa-bars" aria-hidden="true"></i></span>
-    </header>
-    <!-- Navigation Sidebalk-->
-    <nav id="mySidenav">
-      <button class="closebtn" onclick="closeNav()">×</button>
-      <a href="../over_mij.html">Over mij</a>
-      <a href="../over_mij/introductie.html" class="sublink">Introductie</a>
-      <a href="../over_mij/skills.html" class="sublink">Skills</a>
-      <a href="../over_mij.html" class="sublink">Zie meer →</a>
-      <a href="../schoolopdracht.html">Deze website</a>
-      <a href="week_1.html" class="sublink">Interaction Design</a>
-      <a href="proces.html" class="sublink">Ontwerpproces</a>
-      <a href="../schoolopdracht.html" class="sublink">Zie meer →</a>
-      <a href="../projecten.html">Projecten</a>
-      <a href="../404.html" class="sublink">W.I.P.</a>
-      <a href="../404.html" class="sublink">W.I.P.</a>
-      <a href="../projecten.html" class="sublink">Zie meer →</a>
-    </nav>
-    <!-- Navigation topbalk -->
-    <nav class="topNav">
-      <a href="dns.html"><i class="fas fa-chevron-left"></i> DNS en Uploaden</a>
-      <span>Interaction Design</span>
-      <a href="proces.html">Ontwerpproces <i class="fas fa-chevron-right"></i></a>
-    </nav>
-    <hr class="mainSeperator"/>
-    <!-- Inhoud -->
-    <div class="mainWrapper">
-      <main id="widthLimit">
-        <!-- Artikel -->
-        <section class="week_1">
-          <h2>Het ontwerpproces van een Interaction Designer</h3>
-          <pre><i>   door Ben Vos, 01/11/2021</i></pre>
-            <p>Hoe begint een designer nou met ontwerpen? Dit is eigenlijk niet zo'n lastige vraag, hier is namelijk een stappenplan voor.
-              <ul>
-                <li>Understand</li>
-                <li>Explore</li>
-                <li>Materialize</li>
-              </ul>
-            Voor dat ik dat uitleg eerst nog een vraag voor je: Wat is Interaction Design (IxD)? Deze is iets lastiger, maar nog steeds goed te definiëren.</p>
-            <figure>
-              <blockquote><strong>Interaction design</strong> (ook wel afgekort als IxD) definieert de structuur en het gedrag van interactieve systemen. 
-                De ontwerpdiscipline is gericht op het creëren van producten en diensten die nuttig, bruikbaar en betekenisvol zijn voor de mensen die ze gebruiken.</blockquote>
-              <figcaption>Uit <cite><a href="https://www.worldcat.org/title/about-face-3-the-essentials-of-interaction-design-prev-ed-cataloged-as-about-face-20/oclc/1047847307" target="_blank" rel="noopener">About Face 3: The Essentials of Interaction Design</a></cite>
-              door Alan Cooper</figcaption>
-            </figure>
-            <p>Laten we nu eens kijken wat er gebeurt wanneer ik deze twee vragen en antwoorden naast elkaar neerleg, want deze twee hebben een hoop met elkaar te maken. 
-              Er staat namelijk dat de producten en diensten nuttig, bruikbaar en betekenisvol moeten zijn, dit doel is haalbaar door het bovenstaande stappenplan te gebruiken. 
-              Begrijp wat de gebruiker nodig heeft, ontdek vervolgens op welke manier dit haalbaar is en maak uiteindelijk een product of dienst die aan de wensen van de gebruiker voldoet.</p>
-            <!-- Design thinking plaatje, + source -->
-            <figure>
-              <img src="..\images\design_thinking.jpg" alt="Design thinking">
-              <figcaption>Afbeelding van <a href="https://www.nngroup.com/articles/design-thinking/" target="_blank" rel="noopener">Nielsen Norman Group</a></figcaption>
-            </figure>
-            <p>Hierboven dus het globale ontwerpproces van een Interaction Designer, hieronder werk ik wat uitgebreider uit hoe dit praktisch in zijn werk gaat en wat daar bij komt kijken. 
-              De 3 punten die boven zijn genoemd zijn namelijk allemaal niet even sterk aanwezig bij <abbr title="Interaction Design">IxD</abbr>, de naam zegt het al, ontwerpen bevindt zich voornamelijk binnen het punt 
-              Materialize en hoort ook een beetje bij Explore. Understand is een punt dat wat hier een beetje buiten valt.</p>
-            <!-- Wireframes -->
-            <h3>Wireframes</h3>
-            <p>Als een designer van grafische interfaces en websites wordt er natuurlijk niet van een Interaction designer verwacht dat hij alles met pen en papier uitwerkt, 
-              hier zijn tools voor die de ontwerper snel en eenvoudig zijn gedachten laten vastleggen door middel van wireframes.</p>
-            <p>Nu vraag je je waarschijnlijk af wat wireframes zijn, zie het maar als een soort schets. Een ontwerper heeft 3 stadia aan wireframes met elk hun eigen voor- en nadelen. 
-              Zoals in de afbeelding te zien is heeft elk stadium een ander niveau aan detail.</p>
-            <!-- Wirframes, + source -->
-            <figure>
-              <img src="..\images\wireframes.jpg" alt="Low mid en high fidelity wireframes">
-              <figcaption>Afbeelding van <a href="https://mentormate.com/blog/low-fidelity-wireframes-vs-high-fidelity-wireframes//" target="_blank" rel="noopener">Tsvetelina Lazarova</a></figcaption>
-            </figure>
-            <p>Low-Fidelity wireframes (LoFi) bestaan uit niets meer dan een kader met hierin een paar strepen en figuren, dit wireframe kan in een minuut worden gemaakt en helpt de 
-              ontwerper met zijn gedachten op papier zetten. Het nadeel aan dit type wireframe is dat alleen de ontwerper ziet wat hij met deze tekening bedoelt, het is heel lastig om met de 
-              afwezigheid van daadwerkelijke tekst en plaatjes je ontwerp uit te leggen.</p>
-            <p>Mid-Fidelity wireframes (MidFi) gaan een stuk verder, wanneer dit wireframe af is weet de ontwerper welke elementen waar gaat staan en hoe groot alles ongeveer gaat worden. 
-              Dit is ook een mooi tussenmoment om je ontwerp aan anderen te laten zien, alle lijntjes zijn nu woorden en knoppen hebben namen. Met de ontwerper ernaast kan het idee op een 
-              duidelijke manier worden overgebracht. Uiteraard kost dit soort wireframe meer tijd om te maken dan de <abbr title="Low-Fidelity">LoFi</abbr> variant.</p>
-            <p>De laatste uit het rijtje is het High-Fidelity (HiFi) wireframe, hier gaan alle grijstinten en placeholders de deur uit. Deze afbeelding ziet er niet (veel) anders uit dan 
-              het scherm wat gebruikers later te zien krijgen, het is een afgewerkt ontwerp. Kleuren zijn gekozen, fonts zijn toegepast en plaatjes staan op hun plek. Het kost redelijk wat tijd 
-              om te maken, maar het is zo compleet dat een ontwikkelaar hiermee aan de gang kan om het om te zetten in een applicatie.</p>
-            <!-- Testen -->
-            <h3>Testen</h3>
-            <p>Op dit punt in tijd lijkt het alsof het ontwerp af is, maar niets is minder waar. Als we de stappen van Design Thinking volgen, dan zitten we nu pas op het punt prototype en een 
-              prototype moet worden getest. Dit testen gebeurt op 2 gebieden: Usability (gebruiksvriendelijkheid) en Accessibility (toegankelijkheid). Bij een usability test zijn er altijd mensen 
-              betrokken, vaak 5 personen. Over dit getal is onderzoek gedaan door Jacob Nielssen, volg deze link om daar meer over te leren. Een accessibility test wordt vaak gedaan door middel van een programma zoals Lighthouse.</p>
-            <p>Nu ben ik mijzelf ervan bewust dat ik dit deel schrijf na het stukje over HiFi wireframes, maar een usability test gebeurt niet pas op dit punt. 
-              Volgens het principe van vroeger testen is eerder feedback kan er een hoop werk worden bespaard door al met prototypes gebaseerd op <abbr title="Mid-Fidelity">MidFi</abbr> wireframes te testen, fouten kunnen vroeg in het 
-              ontwerpproces worden gecorrigeerd. Bij het testen op usability krijgt de tester vaak één opdracht, een voorbeeld hiervan kan zijn het versturen van een contactformulier. Na deze test kunnen 
-              er ook nog 5 positieve en 5 negatieve vragen worden gesteld om een System Usability Score (SUS) te krijgen waarmee kan worden gekeken of een ontwerp voor of achteruit is gegaan.</p>
-            <p>Bij een accessibility test wordt er gelet op een aantal dingen die ervoor zorgen dat je product even toegankelijk is voor alle gebruikers. 
-              Contrast word getest voor mensen met kleurenblindheid en er wordt gekeken of links en afbeeldingen namen hebben voor tekst-naar-spraak generators. 
-              Een programma zoals Lighthouse (wat ingebouwd is in veel browsers) kan met een druk op de knop alle problemen aanwijzen, 
-              een developer/designer kan deze punten één voor één afwerken en zo het product voor toegankelijk maken.</p>  
-            <p>Als een designer op dit punt is aanbeland dan heeft hij een grafisch ontwerp wat een developer kan omzetten in een werkend product. 
-              Hier zullen nog meer testen op worden uitgevoerd en het kan zo zijn dat het ontwerp hier en daar nog zal worden aangepast, 
-              maar het grootste deel van het werk is gedaan, het ontwerpproces is van begin tot einde doorlopen.</p>
-            <!-- Bronnen lijst -->
-            <h3>Bronnen</h3>
-            <ul>
-              <li>Siang, T. Y. (2020, 25 juli). <i>What is interaction design?</i> The Interaction Design Foundation. Bekeken op 1 november, 2021, van <a href="https://www.interaction-design.org/literature/article/what-is-interaction-design" target="_blank" rel="noopener">https://www.interaction-design.org/literature/article/what-is-interaction-design</a>.</li>
-              <li>Cooper, A (2007), <i>About Face 3: The Essentials of Interaction Design</i> Indianapolis: Wiley Pub.</li>
-              <li>Gibbons, S. (2016, 31 juli). <i>Design Thinking 101</i> Nielsen Norman Group. Bekeken op 1 november, 2021, van <a href="https://www.nngroup.com/articles/design-thinking/" target="_blank" rel="noopener">https://www.nngroup.com/articles/design-thinking/</a>.</li>
-              <li>Lazarova, T. (z.d.). <i>Low Fidelity Wireframes vs High Fidelity Wireframes</i> Mentormate. Bekeken op 1 november, 2021, van <a href="https://mentormate.com/blog/low-fidelity-wireframes-vs-high-fidelity-wireframes//" target="_blank" rel="noopener">https://mentormate.com/blog/low-fidelity-wireframes-vs-high-fidelity-wireframes//</a>.</li>
-            </ul>
-        </section>
-      </main>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Artikel over Interaction Design">
+  <meta name="author" content="Ben Vos">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/266b9a8abe.js" crossorigin="anonymous"></script>
+  <script src="../javascript/scripts.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Interaction Design | Ben Vos</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1><a id="pageTitle" href="../index.html">Ben's Backpack</a></h1>
+    <hr>
+    <span id="burgermenu" onclick="openNav()">Menu <i class="fas fa-bars" aria-hidden="true"></i></span>
+  </header>
+  <!-- Navigation Sidebalk-->
+  <nav id="mySidenav">
+    <button class="closebtn" onclick="closeNav()">×</button>
+    <a href="../over_mij.html">Over mij</a>
+    <a href="../over_mij/introductie.html" class="sublink">Introductie</a>
+    <a href="../over_mij/skills.html" class="sublink">Skills</a>
+    <a href="../over_mij.html" class="sublink">Zie meer →</a>
+    <a href="../schoolopdracht.html">Deze website</a>
+    <a href="week_1.html" class="sublink">Interaction Design</a>
+    <a href="proces.html" class="sublink">Ontwerpproces</a>
+    <a href="../schoolopdracht.html" class="sublink">Zie meer →</a>
+    <a href="../projecten.html">Projecten</a>
+    <a href="../404.html" class="sublink">W.I.P.</a>
+    <a href="../404.html" class="sublink">W.I.P.</a>
+    <a href="../projecten.html" class="sublink">Zie meer →</a>
+  </nav>
+  <!-- Navigation topbalk -->
+  <nav class="topNav">
+    <a href="dns.html"><i class="fas fa-chevron-left"></i> DNS en Uploaden</a>
+    <span>Interaction Design</span>
+    <a href="proces.html">Ontwerpproces <i class="fas fa-chevron-right"></i></a>
+  </nav>
+  <hr class="mainSeperator" />
+  <!-- Inhoud -->
+  <div class="mainWrapper">
+    <main id="widthLimit">
+      <!-- Artikel -->
+      <section class="week_1">
+        <h2>Het ontwerpproces van een Interaction Designer</h2>
+        <pre><i>   door Ben Vos, 01/11/2021</i></pre>
+        <p>Hoe begint een designer nou met ontwerpen? Dit is eigenlijk niet zo'n lastige vraag, hier is namelijk een
+          stappenplan voor.</p>
+        <ul>
+          <li>Understand</li>
+          <li>Explore</li>
+          <li>Materialize</li>
+        </ul>
+        <p>Voor dat ik dat uitleg eerst nog een vraag voor je: Wat is Interaction Design (IxD)? Deze is iets lastiger,
+          maar nog steeds goed te definiëren.</p>
+        <figure>
+          <blockquote><strong>Interaction design</strong> (ook wel afgekort als IxD) definieert de structuur en het
+            gedrag van interactieve systemen.
+            De ontwerpdiscipline is gericht op het creëren van producten en diensten die nuttig, bruikbaar en
+            betekenisvol zijn voor de mensen die ze gebruiken.</blockquote>
+          <figcaption>Uit <cite><a
+                href="https://www.worldcat.org/title/about-face-3-the-essentials-of-interaction-design-prev-ed-cataloged-as-about-face-20/oclc/1047847307"
+                target="_blank" rel="noopener">About Face 3: The Essentials of Interaction Design</a></cite>
+            door Alan Cooper</figcaption>
+        </figure>
+        <p>Laten we nu eens kijken wat er gebeurt wanneer ik deze twee vragen en antwoorden naast elkaar neerleg, want
+          deze twee hebben een hoop met elkaar te maken.
+          Er staat namelijk dat de producten en diensten nuttig, bruikbaar en betekenisvol moeten zijn, dit doel is
+          haalbaar door het bovenstaande stappenplan te gebruiken.
+          Begrijp wat de gebruiker nodig heeft, ontdek vervolgens op welke manier dit haalbaar is en maak uiteindelijk
+          een product of dienst die aan de wensen van de gebruiker voldoet.</p>
+        <!-- Design thinking plaatje, + source -->
+        <figure>
+          <img src="../images/design_thinking.jpg" alt="Design thinking">
+          <figcaption>Afbeelding van <a href="https://www.nngroup.com/articles/design-thinking/" target="_blank"
+              rel="noopener">Nielsen Norman Group</a></figcaption>
+        </figure>
+        <p>Hierboven dus het globale ontwerpproces van een Interaction Designer, hieronder werk ik wat uitgebreider uit
+          hoe dit praktisch in zijn werk gaat en wat daar bij komt kijken.
+          De 3 punten die boven zijn genoemd zijn namelijk allemaal niet even sterk aanwezig bij <abbr
+            title="Interaction Design">IxD</abbr>, de naam zegt het al, ontwerpen bevindt zich voornamelijk binnen het
+          punt
+          Materialize en hoort ook een beetje bij Explore. Understand is een punt dat wat hier een beetje buiten valt.
+        </p>
+        <!-- Wireframes -->
+        <h3>Wireframes</h3>
+        <p>Als een designer van grafische interfaces en websites wordt er natuurlijk niet van een Interaction designer
+          verwacht dat hij alles met pen en papier uitwerkt,
+          hier zijn tools voor die de ontwerper snel en eenvoudig zijn gedachten laten vastleggen door middel van
+          wireframes.</p>
+        <p>Nu vraag je je waarschijnlijk af wat wireframes zijn, zie het maar als een soort schets. Een ontwerper heeft
+          3 stadia aan wireframes met elk hun eigen voor- en nadelen.
+          Zoals in de afbeelding te zien is heeft elk stadium een ander niveau aan detail.</p>
+        <!-- Wirframes, + source -->
+        <figure>
+          <img src="../images/wireframes.jpg" alt="Low mid en high fidelity wireframes">
+          <figcaption>Afbeelding van <a
+              href="https://mentormate.com/blog/low-fidelity-wireframes-vs-high-fidelity-wireframes//" target="_blank"
+              rel="noopener">Tsvetelina Lazarova</a></figcaption>
+        </figure>
+        <p>Low-Fidelity wireframes (LoFi) bestaan uit niets meer dan een kader met hierin een paar strepen en figuren,
+          dit wireframe kan in een minuut worden gemaakt en helpt de
+          ontwerper met zijn gedachten op papier zetten. Het nadeel aan dit type wireframe is dat alleen de ontwerper
+          ziet wat hij met deze tekening bedoelt, het is heel lastig om met de
+          afwezigheid van daadwerkelijke tekst en plaatjes je ontwerp uit te leggen.</p>
+        <p>Mid-Fidelity wireframes (MidFi) gaan een stuk verder, wanneer dit wireframe af is weet de ontwerper welke
+          elementen waar gaat staan en hoe groot alles ongeveer gaat worden.
+          Dit is ook een mooi tussenmoment om je ontwerp aan anderen te laten zien, alle lijntjes zijn nu woorden en
+          knoppen hebben namen. Met de ontwerper ernaast kan het idee op een
+          duidelijke manier worden overgebracht. Uiteraard kost dit soort wireframe meer tijd om te maken dan de <abbr
+            title="Low-Fidelity">LoFi</abbr> variant.</p>
+        <p>De laatste uit het rijtje is het High-Fidelity (HiFi) wireframe, hier gaan alle grijstinten en placeholders
+          de deur uit. Deze afbeelding ziet er niet (veel) anders uit dan
+          het scherm wat gebruikers later te zien krijgen, het is een afgewerkt ontwerp. Kleuren zijn gekozen, fonts
+          zijn toegepast en plaatjes staan op hun plek. Het kost redelijk wat tijd
+          om te maken, maar het is zo compleet dat een ontwikkelaar hiermee aan de gang kan om het om te zetten in een
+          applicatie.</p>
+        <!-- Testen -->
+        <h3>Testen</h3>
+        <p>Op dit punt in tijd lijkt het alsof het ontwerp af is, maar niets is minder waar. Als we de stappen van
+          Design Thinking volgen, dan zitten we nu pas op het punt prototype en een
+          prototype moet worden getest. Dit testen gebeurt op 2 gebieden: Usability (gebruiksvriendelijkheid) en
+          Accessibility (toegankelijkheid). Bij een usability test zijn er altijd mensen
+          betrokken, vaak 5 personen. Over dit getal is onderzoek gedaan door Jacob Nielssen, volg deze link om daar
+          meer over te leren. Een accessibility test wordt vaak gedaan door middel van een programma zoals Lighthouse.
+        </p>
+        <p>Nu ben ik mijzelf ervan bewust dat ik dit deel schrijf na het stukje over HiFi wireframes, maar een usability
+          test gebeurt niet pas op dit punt.
+          Volgens het principe van vroeger testen is eerder feedback kan er een hoop werk worden bespaard door al met
+          prototypes gebaseerd op <abbr title="Mid-Fidelity">MidFi</abbr> wireframes te testen, fouten kunnen vroeg in
+          het
+          ontwerpproces worden gecorrigeerd. Bij het testen op usability krijgt de tester vaak één opdracht, een
+          voorbeeld hiervan kan zijn het versturen van een contactformulier. Na deze test kunnen
+          er ook nog 5 positieve en 5 negatieve vragen worden gesteld om een System Usability Score (SUS) te krijgen
+          waarmee kan worden gekeken of een ontwerp voor of achteruit is gegaan.</p>
+        <p>Bij een accessibility test wordt er gelet op een aantal dingen die ervoor zorgen dat je product even
+          toegankelijk is voor alle gebruikers.
+          Contrast word getest voor mensen met kleurenblindheid en er wordt gekeken of links en afbeeldingen namen
+          hebben voor tekst-naar-spraak generators.
+          Een programma zoals Lighthouse (wat ingebouwd is in veel browsers) kan met een druk op de knop alle problemen
+          aanwijzen,
+          een developer/designer kan deze punten één voor één afwerken en zo het product voor toegankelijk maken.</p>
+        <p>Als een designer op dit punt is aanbeland dan heeft hij een grafisch ontwerp wat een developer kan omzetten
+          in een werkend product.
+          Hier zullen nog meer testen op worden uitgevoerd en het kan zo zijn dat het ontwerp hier en daar nog zal
+          worden aangepast,
+          maar het grootste deel van het werk is gedaan, het ontwerpproces is van begin tot einde doorlopen.</p>
+        <!-- Bronnen lijst -->
+        <h3>Bronnen</h3>
+        <ul>
+          <li>Siang, T. Y. (2020, 25 juli). <i>What is interaction design?</i> The Interaction Design Foundation.
+            Bekeken op 1 november, 2021, van <a
+              href="https://www.interaction-design.org/literature/article/what-is-interaction-design" target="_blank"
+              rel="noopener">https://www.interaction-design.org/literature/article/what-is-interaction-design</a>.</li>
+          <li>Cooper, A (2007), <i>About Face 3: The Essentials of Interaction Design</i> Indianapolis: Wiley Pub.</li>
+          <li>Gibbons, S. (2016, 31 juli). <i>Design Thinking 101</i> Nielsen Norman Group. Bekeken op 1 november, 2021,
+            van <a href="https://www.nngroup.com/articles/design-thinking/" target="_blank"
+              rel="noopener">https://www.nngroup.com/articles/design-thinking/</a>.</li>
+          <li>Lazarova, T. (z.d.). <i>Low Fidelity Wireframes vs High Fidelity Wireframes</i> Mentormate. Bekeken op 1
+            november, 2021, van <a
+              href="https://mentormate.com/blog/low-fidelity-wireframes-vs-high-fidelity-wireframes//" target="_blank"
+              rel="noopener">https://mentormate.com/blog/low-fidelity-wireframes-vs-high-fidelity-wireframes//</a>.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <!-- Navigation Bottombar -->
+  <hr class="mainSeperator" />
+  <nav class="topNav">
+    <a href="dns.html"><i class="fas fa-chevron-left"></i> DNS en Uploaden</a>
+    <a href="proces.html">Ontwerpproces <i class="fas fa-chevron-right"></i></a>
+  </nav>
+  <!-- Footer -->
+  <div class="footerSpace"></div>
+  <footer>
+    <span>Ben Vos 2021</span>
+    <hr />
+    <div class="links">
+      <a href="../over_mij/contact.html">Contact</a>
+      <i class="fas fa-circle"></i>
+      <a href="../pdf/Sitemap.pdf" download>Sitemap</a>
+      <i class="fas fa-circle"></i>
+      <a href="https://www.linkedin.com/in/ben-v-4663a3205/" target="_blank" rel="noopener">LinkedIn</a>
+      <i class="fas fa-circle"></i>
+      <a href="https://github.com/FreeFallingRN" target="_blank" rel="noopener">GitHub</a>
     </div>
-    <!-- Navigation Bottombar -->
-    <hr class="mainSeperator"/>
-    <nav class="topNav">
-      <a href="dns.html"><i class="fas fa-chevron-left"></i> DNS en Uploaden</a>
-      <a href="proces.html">Ontwerpproces <i class="fas fa-chevron-right"></i></a>
-    </nav>
-    <!-- Footer -->
-    <div class="footerSpace"></div>
-    <footer>
-      <span>Ben Vos 2021</span>
-      <hr/>
-      <div class="links">
-        <a href="../over_mij/contact.html">Contact</a>
-        <i class="fas fa-circle"></i>
-        <a href="../pdf/Sitemap.pdf" download>Sitemap</a>
-        <i class="fas fa-circle"></i>
-        <a href="https://www.linkedin.com/in/ben-v-4663a3205/" target="_blank" rel="noopener">LinkedIn</a>
-        <i class="fas fa-circle"></i>
-        <a href="https://github.com/FreeFallingRN" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
+
 </html>
