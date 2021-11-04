@@ -92,11 +92,20 @@ main {
     margin: 0 1em;
 }
 
-.cardwrapper {
+fieldset.cardwrapper {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     position:relative;
+    border-radius:0 40px;
+    border-width:5px;
+    margin:0em 2em 2em 2em;
+}
+
+fieldset.cardwrapper > legend {
+    margin-left:3em;
+    font-size:20px;
+    font-weight:bold;
 }
 
 .card {
@@ -312,6 +321,22 @@ form > input#submit:hover {
 
 input.touched:invalid, textarea.touched:invalid {
     border-color: red;
+}
+
+#linkBox {
+    width:fit-content;
+    border:inset 2px grey;
+    padding:0 2em 0 0;
+    border-radius:30px;
+    background-color:#75a7b36c;
+    margin:auto;
+}
+
+.prototype {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width:900px;
+    height:500px; 
+    margin:auto 0;
 }
 
 @media screen and (max-height: 450px) {
