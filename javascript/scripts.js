@@ -1,3 +1,11 @@
+/*  Author Ben Vos
+    Date 4 november 2021
+    Project Eind Product
+    Description
+        Het javascript document voor het project Eind Product
+*/
+
+// Zij navigatie
 function openNav() {
     Object.assign(mySidenav.style,{width:"250px", opacity:"100%"});
   }

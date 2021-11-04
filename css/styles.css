@@ -1,11 +1,8 @@
-/* Color pallet
-    Header: #10375d
-    Footer, sideNav: #05647a
-    #6db8bb
-    Sublink: #e0e2d5
-    CardContent: #869684
-    Contact form: #c5c6c9
-    https://colorpalettes.net/color-palette-2936/
+/*  Author Ben Vos
+    Date 4 november 2021
+    Project Eind Product
+    Description
+        Het css document voor het project Eind Product
 */
 :root {
     --footerHeight: 120px;
@@ -43,6 +40,7 @@ blockquote {
     font-style:italic;
 }
 
+/* Header */
 header {
     position: relative;
     background-color: #10375d;
@@ -56,6 +54,7 @@ header {
     color: white;
 }  
 
+/* Footer */
 footer {
     padding: 1em 1em 0;
     position:absolute;
@@ -83,31 +82,21 @@ div.footerSpace {
     height:var(--spaceNeeded)
 }
 
-#intro {
-    text-align: center;
-    padding: 2em;
-}
-
+/* Layout */
 main {
     margin: 0 1em;
 }
 
-fieldset.cardwrapper {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    position:relative;
-    border-radius:0 40px;
-    border-width:5px;
-    margin:0em 2em 2em 2em;
+div.mainWrapper {
+    display:flex;
+    justify-content:center;
 }
 
-fieldset.cardwrapper > legend {
-    margin-left:3em;
-    font-size:20px;
-    font-weight:bold;
+#widthLimit {
+    max-width:900px;
 }
 
+/* Kaarten */
 .card {
     background-color: #75a7b36c;
     width: 350px;
@@ -161,6 +150,23 @@ a.cardHeader {
     padding: 0 0.6em;
 }
 
+fieldset.cardwrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    position:relative;
+    border-radius:0 40px;
+    border-width:5px;
+    margin:0em 2em 2em 2em;
+}
+
+fieldset.cardwrapper > legend {
+    margin-left:3em;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Zijnavigatie */
 #mySidenav {
     height: 100%;
     width: 0;
@@ -185,8 +191,7 @@ a.cardHeader {
     background-color: transparent;
     outline: none;
     border: none;
-  }
-
+}
 
 #mySidenav .sublink {
   color: #e0e2d5;
@@ -218,6 +223,7 @@ span#burgermenu {
     font-size:30px;
 }
 
+/* Boven navigatie */
 .topNav {
     display:flex;
     flex-direction:row;
@@ -230,24 +236,21 @@ span#burgermenu {
     text-decoration:none;
 }
 
+/* Inhoud */
+#intro {
+    text-align: center;
+    padding: 2em;
+}
+
 .mainSeperator {
     width:calc(100% - 2em);
-}
-
-div.mainWrapper {
-    display:flex;
-    justify-content:center;
-}
-
-#widthLimit {
-    max-width:900px;
 }
 
 figcaption {
     text-align:right;
 }
 
-
+/* Interaction Design */
 .week_1 h3 {
     margin-bottom: 0;
 }
@@ -264,6 +267,14 @@ figcaption {
     text-indent: 1.5em;
 }
 
+/* Ontwerpproces */
+.prototype {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width:900px;
+    height:500px; 
+    margin:auto 0;
+}
+
 embed {
     width:100%;
     height:600px;
@@ -274,6 +285,7 @@ embed {
     max-width:500px;
 }
 
+/* Contact */
 .contactPage {
     text-align:center;
 }
@@ -323,6 +335,7 @@ input.touched:invalid, textarea.touched:invalid {
     border-color: red;
 }
 
+/* Schoolopdracht */
 #linkBox {
     width:fit-content;
     border:inset 2px grey;
@@ -332,13 +345,13 @@ input.touched:invalid, textarea.touched:invalid {
     margin:auto;
 }
 
-.prototype {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    width:900px;
-    height:500px; 
-    margin:auto 0;
+/* Grafisch design */
+figure.lighthouseReport {
+    width:80%;
+    margin:2em auto;
 }
 
+/* Scale */
 @media screen and (max-height: 450px) {
     #mySidenav {padding-top: 15px;}
     #mySidenav a {font-size: 18px;}
