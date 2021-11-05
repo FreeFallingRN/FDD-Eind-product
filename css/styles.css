@@ -6,7 +6,7 @@
 */
 
 :root {
-    --footerHeight: 120px;
+    --footerHeight: 80px;
 }
 
 * {
@@ -366,79 +366,101 @@ figure.lighthouseReport {
 
 /* Uploaden */
 
-ol > img {
-    margin-bottom:1em;
+ol>img {
+    margin-bottom: 1em;
 }
 
 /* Introductie */
 
 #profilePicture {
-    float:right;
-    border:solid 2px #10375d;
-    border-radius:10px;
-    margin:2.5em;
+    float: right;
+    border: solid 2px #10375d;
+    border-radius: 10px;
+    margin: 2.5em;
 }
 
 .gallery {
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .gallery>img {
-    max-width:40%;
-    border:solid 2px #10375d;
-    border-radius:10px;
-    margin:1.5em;
+    max-width: 40%;
+    border: solid 2px #10375d;
+    border-radius: 10px;
+    margin: 1.5em;
 }
 
 .source {
-    font-style:italic;
-    color:gray;
+    font-style: italic;
+    color: gray;
 }
 
 /* Skills */
 
 .emptybar {
-    width:100%;
-    background-color:white;
-    height:20px;
-    margin-bottom:2em;
+    width: 100%;
+    background-color: white;
+    height: 20px;
+    margin-bottom: 2em;
 }
 
 .skills {
-    color:white;
-    text-align:right;
+    color: white;
+    text-align: right;
 }
 
 .elementary {
-    width:20%;
-    background-color:red;
-    height:100%;
+    width: 20%;
+    background: rgb(139, 0, 0);
+    background: linear-gradient(90deg, rgba(139, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    height: 100%;
 }
 
+/* Gradient machine https://cssgradient.io */
+
 .beginner {
-    width:40%;
-    background-color:orange;
-    height:100%;
+    width: 40%;
+    background: rgb(139, 0, 0);
+    background: linear-gradient(90deg, rgba(139, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 50%, rgba(255, 165, 0, 1) 100%);
+    height: 100%;
 }
 
 .intermediate {
-    width:60%;
-    background-color:yellow;
-    height:100%;
+    width: 60%;
+    background: rgb(139, 0, 0);
+    background: linear-gradient(90deg, rgba(139, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 33%, rgba(255, 165, 0, 1) 67%, rgba(255, 255, 0, 1) 100%);
+    height: 100%;
 }
 
 .advanced {
-    width:80%;
-    background-color:green;
-    height:100%;
+    width: 80%;
+    background: rgb(139, 0, 0);
+    background: linear-gradient(90deg, rgba(139, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 25%, rgba(255, 165, 0, 1) 50%, rgba(255, 255, 0, 1) 75%, rgba(0, 255, 0, 1) 100%);
+    height: 100%;
 }
 
 .veteran {
-    width:100%;
-    background-color:darkgreen;
-    height:100%;
+    width: 100%;
+    background: rgb(139, 0, 0);
+    background: linear-gradient(90deg, rgba(139, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 20%, rgba(255, 165, 0, 1) 40%, rgba(255, 255, 0, 1) 60%, rgba(0, 255, 0, 1) 80%, rgba(0, 100, 0, 1) 100%);
+    height: 100%;
+}
+
+/* Werkervaring */
+
+.bedrijf img {
+    width:100px;
+    height:100px;
+    float:left;
+    border: solid 2px #10375d;
+    border-radius: 10px;
+    margin: 0 1.5em 1em 0;
+}
+
+#widthLimit > .bedrijf p{
+    text-indent:0px;
 }
 
 /* Scale */
