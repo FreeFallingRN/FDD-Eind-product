@@ -397,6 +397,50 @@ ol > img {
     color:gray;
 }
 
+/* Skills */
+
+.emptybar {
+    width:100%;
+    background-color:white;
+    height:20px;
+    margin-bottom:2em;
+}
+
+.skills {
+    color:white;
+    text-align:right;
+}
+
+.elementary {
+    width:20%;
+    background-color:red;
+    height:100%;
+}
+
+.beginner {
+    width:40%;
+    background-color:orange;
+    height:100%;
+}
+
+.intermediate {
+    width:60%;
+    background-color:yellow;
+    height:100%;
+}
+
+.advanced {
+    width:80%;
+    background-color:green;
+    height:100%;
+}
+
+.veteran {
+    width:100%;
+    background-color:darkgreen;
+    height:100%;
+}
+
 /* Scale */
 
 @media screen and (max-height: 450px) {
