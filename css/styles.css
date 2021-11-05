@@ -370,6 +370,33 @@ ol > img {
     margin-bottom:1em;
 }
 
+/* Introductie */
+
+#profilePicture {
+    float:right;
+    border:solid 2px #10375d;
+    border-radius:10px;
+    margin:2.5em;
+}
+
+.gallery {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.gallery>img {
+    max-width:40%;
+    border:solid 2px #10375d;
+    border-radius:10px;
+    margin:1.5em;
+}
+
+.source {
+    font-style:italic;
+    color:gray;
+}
+
 /* Scale */
 
 @media screen and (max-height: 450px) {
