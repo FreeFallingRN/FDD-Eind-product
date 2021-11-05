@@ -407,7 +407,7 @@ ol>img {
 }
 
 .skills {
-    color: white;
+    color: rgb(65, 0, 245);
     text-align: right;
 }
 
@@ -448,19 +448,40 @@ ol>img {
     height: 100%;
 }
 
+#iconGallery {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:1em;
+}
+
+#iconGallery img {
+    padding:2px;
+    width: 200px;
+    height: 200px;
+    border: inset 2px #10375d;
+    border-radius: 10px;
+    background-color:white;
+}
+
+#iconGallery img:hover {
+    box-shadow: 0 0 10px #15497c;
+}
+
 /* Werkervaring */
 
 .bedrijf img {
-    width:100px;
-    height:100px;
-    float:left;
+    width: 100px;
+    height: 100px;
+    float: left;
     border: solid 2px #10375d;
     border-radius: 10px;
     margin: 0 1.5em 1em 0;
 }
 
-#widthLimit > .bedrijf p{
-    text-indent:0px;
+#widthLimit>.bedrijf p {
+    text-indent: 0px;
 }
 
 /* Scale */
