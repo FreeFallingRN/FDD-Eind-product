@@ -484,6 +484,16 @@ ol>img {
     text-indent: 0px;
 }
 
+/* Projecten */
+.whiteBackground {
+    background-color: white;
+    border: solid 2px #10375d;
+}
+
+#widthLimit>.whiteBackground p {
+    text-indent: 0px;
+}
+
 /* Scale */
 
 @media screen and (max-height: 450px) {
